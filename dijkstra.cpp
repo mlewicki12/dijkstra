@@ -108,7 +108,7 @@ int main(int argc, char** argv) {
 
 	matr->Dijkstra(ret);
 	std::cout << "Results of running Dijkstra's algorithm:\n";
-	for(int i = 0; i < 6; ++i) {
-		std::cout << (i + 1) << ": " << ret[i] << "\n";
+	for(int i = 1; i < 6; ++i) {
+		std::cout << "1 -> " << (i + 1) << ": " << ret[i] << "\n";
 	}
 }
