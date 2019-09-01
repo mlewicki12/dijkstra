@@ -156,7 +156,7 @@ int main(int argc, char** argv) {
 	graph[5].successors = NULL;
 
 	Dijkstra(graph, potNodes, &last);
-	for(int i = 0; i < 6; ++i) {
-		printf("%d: %.1f\n", i+1, graph[i].dist);
+	for(int i = 1; i < 6; ++i) {
+		printf("1 -> %d: %.0f\n", i+1, graph[i].dist);
 	}
 }

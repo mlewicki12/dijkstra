@@ -88,8 +88,8 @@ class AdjMatrix {
 			while((vert = minvert(ret, s)) != -1) {
 				s[vert] = true;
 				for(int i = 1; i < size; ++i) {
-					if(distances[0][vert] + distances[vert][i] < ret[i]) {
-						ret[i] = distances[0][vert] + distances[vert][i];
+					if(ret[vert] + distances[vert][i] < ret[i]) {
+						ret[i] = ret[vert] + distances[vert][i];
 					}
 				}
 			}
